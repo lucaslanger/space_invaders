@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Intro to Javascript</title>
+	</head>
+	<body>
+		<div id="myDiv"></div>
+		
+		<script type="text/javascript">
+		
+		var myString1 = "Cow";
+		var myString2 = myString1;
+
+		myString1 = "Modified";
+		document.write(myString2);
+		
+		var list = [1,3,5,6,7,4];
+		
+		for (var c=0; c < list.length;c++){
+			console.log(list[c]);
+		}
+		
+		document.getElementById("myDiv").innerHTML = "this is the content";
+		document.getElementById("myDiv").style.backgroundColor = "blue";
+		
+		var myDiv = document.getElementById("myDiv");
+
+		var myObject = {height: 5.8, unit:"feet", name: "lucas"}
+		
+		myDiv.innerHTML = myObject.height;
+			
+		
+		</script>
+		
+	</body>
+
+</html>
