@@ -36,11 +36,9 @@ explosionImage.onload = function(){ explosionReady = true;};
 
 var explosion = {x: 250, y: 250, xframe: 0, yframe: 0};
 
-//Tutorial 5 stuff
 var listofAliens = [];
 var newAlienCounter = 0;
 var listofIndicesToRemove = []
-//
 
 var render = function(){
 
@@ -56,7 +54,9 @@ if (alienReady){
 	//console.log("Hello Alien");
 	//ctx.drawImage(alienImage, 100, 100, 75, 75);
 
-	//TUTORIAL 5 STUFF!!!	
+
+	//TUTORIAL 5 STUFF!!!
+	
 
 	if (newAlienCounter == 0){
 		listofAliens.push({x: Math.max(30,Math.random()* canvas.width - 100), y: 0, size: Math.random()*50 + 50});
@@ -82,10 +82,9 @@ if (alienReady){
 		}
 	}
 	
-	for (i in listofIndicesToRemove){
+	for (var i in listofIndicesToRemove){
 		listofAliens.splice(i,1);
 	}
-	//
 
 }
 
